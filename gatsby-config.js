@@ -3,7 +3,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `gatsby-bootcamp`,
+    title: `Gatsby Bootcamp!`,
+    author: `Daniel Victor`,
+    description: `Site feito a fim de aprender Gatsby e GraphQL para gerenciamento de conteúdo.`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
@@ -11,12 +13,12 @@ module.exports = {
     options: {
       "icon": "src/images/icon.png"
     }
-  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
-    },
-    __key: "images"
-  }]
+  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", `gatsby-plugin-mdx`, {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "src",
+        "path": `${__dirname}/src/`
+      },
+      __key: "posts"
+    }]
 };

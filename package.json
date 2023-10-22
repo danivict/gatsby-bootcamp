@@ -14,9 +14,11 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^5.12.4",
+    "@mdx-js/react": "^2.3.0",
+    "gatsby": "*",
     "gatsby-plugin-image": "^3.12.1",
     "gatsby-plugin-manifest": "^5.12.1",
+    "gatsby-plugin-mdx": "^5.12.1",
     "gatsby-plugin-sass": "^6.12.1",
     "gatsby-plugin-sharp": "^5.12.1",
     "gatsby-plugin-sitemap": "^6.12.1",
@@ -25,5 +27,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.4"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
   }
 }
